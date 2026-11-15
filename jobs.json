@@ -1,0 +1,222 @@
+{
+  "last_updated": "15 Nov 2026, 07:11 PM PKT",
+  "total_jobs": 10,
+  "jobs": [
+    {
+      "id": "job-101",
+      "title": "Senior AI & Machine Learning Engineer",
+      "company": "Systems Limited",
+      "location": "Lahore (Hybrid)",
+      "city": "Lahore",
+      "category": "Tech & AI",
+      "type": "Full-Time",
+      "experience": "3-5 Years",
+      "salary": "PKR 280,000 - 450,000 / month",
+      "description": "Building NLP pipelines, fine-tuning LLMs, and deploying cloud machine learning models on Azure and AWS.",
+      "skills": [
+        "Python",
+        "TensorFlow",
+        "FastAPI",
+        "LLMs",
+        "Azure AI"
+      ],
+      "source": "Systems Careers",
+      "apply_url": "https://www.systemsltd.com/careers",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-102",
+      "title": "Full Stack Developer (React & Node.js)",
+      "company": "10Pearls",
+      "location": "Karachi / Islamabad",
+      "city": "Karachi",
+      "category": "Tech & AI",
+      "type": "Full-Time",
+      "experience": "2-5 Years",
+      "salary": "PKR 220,000 - 360,000 / month",
+      "description": "Developing modern web apps, scalable microservices, and integrating secure third-party payment gateways.",
+      "skills": [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "source": "Rozee.pk",
+      "apply_url": "https://10pearls.com/careers/",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-103",
+      "title": "Data Analyst & BI Specialist",
+      "company": "Jazz (VEON)",
+      "location": "Islamabad (On-site)",
+      "city": "Islamabad",
+      "category": "Tech & AI",
+      "type": "Full-Time",
+      "experience": "2-4 Years",
+      "salary": "PKR 180,000 - 280,000 / month",
+      "description": "Analyzing telecom big data, building automated PowerBI dashboards, and customer churn prediction models.",
+      "skills": [
+        "SQL",
+        "PowerBI",
+        "Python",
+        "Tableau",
+        "BigQuery"
+      ],
+      "source": "Jazz Careers",
+      "apply_url": "https://jobs.jazz.com.pk/",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-104",
+      "title": "Management Trainee Officer (MTO) - Digital Banking",
+      "company": "Habib Bank Limited (HBL)",
+      "location": "Karachi & Lahore",
+      "city": "Karachi",
+      "category": "Banking & Finance",
+      "type": "Full-Time",
+      "experience": "Fresh Graduate / 0-1 Year",
+      "salary": "PKR 95,000 - 135,000 / month",
+      "description": "Comprehensive rotational banking program covering branch operations, FinTech products, and risk analysis.",
+      "skills": [
+        "Financial Analysis",
+        "Banking Ops",
+        "Communication",
+        "Problem Solving"
+      ],
+      "source": "HBL Official",
+      "apply_url": "https://www.hbl.com/careers",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-105",
+      "title": "Flutter / Mobile Application Engineer",
+      "company": "Devsinc",
+      "location": "Lahore",
+      "city": "Lahore",
+      "category": "Tech & AI",
+      "type": "Full-Time",
+      "experience": "2-4 Years",
+      "salary": "PKR 170,000 - 270,000 / month",
+      "description": "Designing and maintaining high-performance cross-platform iOS and Android applications.",
+      "skills": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Bloc Architecture",
+        "REST APIs"
+      ],
+      "source": "Mustakbil.com",
+      "apply_url": "https://www.devsinc.com/careers",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-106",
+      "title": "DevOps & Cloud Infrastructure Engineer",
+      "company": "Arbisoft",
+      "location": "Lahore / Remote (Pakistan)",
+      "city": "Remote",
+      "category": "Tech & AI",
+      "type": "Remote / Hybrid",
+      "experience": "3+ Years",
+      "salary": "PKR 260,000 - 400,000 / month",
+      "description": "Managing automated Kubernetes clusters, Terraform infrastructure, CI/CD pipelines, and cloud security.",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Terraform",
+        "GitHub Actions"
+      ],
+      "source": "Arbisoft Careers",
+      "apply_url": "https://arbisoft.com/careers",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-107",
+      "title": "Assistant Director (Software & Cloud)",
+      "company": "NADRA",
+      "location": "Islamabad",
+      "city": "Islamabad",
+      "category": "Govt & Public Sector",
+      "type": "Regular / Govt",
+      "experience": "3-5 Years",
+      "salary": "PKR 160,000 - 240,000 / month",
+      "description": "Developing and securing high-traffic government identity platforms, citizen portals, and biometric systems.",
+      "skills": [
+        "Oracle DB",
+        "Linux Administration",
+        "Cybersecurity",
+        "PL/SQL"
+      ],
+      "source": "NADRA Official",
+      "apply_url": "https://www.nadra.gov.pk/careers/",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-108",
+      "title": "Growth Marketing & Brand Specialist",
+      "company": "SadaPay",
+      "location": "Islamabad / Remote",
+      "city": "Remote",
+      "category": "Marketing & Sales",
+      "type": "Full-Time",
+      "experience": "2-4 Years",
+      "salary": "PKR 200,000 - 320,000 / month",
+      "description": "Driving FinTech customer acquisition, digital advertising campaigns, social growth, and partnership funnels.",
+      "skills": [
+        "Performance Marketing",
+        "SEO/SEM",
+        "Growth Hacking",
+        "Google Ads"
+      ],
+      "source": "LinkedIn",
+      "apply_url": "https://sadapay.pk/careers/",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-109",
+      "title": "Trainee / Associate Software Engineer",
+      "company": "VentureDive",
+      "location": "Lahore / Karachi",
+      "city": "Lahore",
+      "category": "Tech & AI",
+      "type": "Full-Time",
+      "experience": "0-1 Year (Fresh Graduates)",
+      "salary": "PKR 100,000 - 150,000 / month",
+      "description": "Exciting opportunity for fresh computer science graduates to work on cutting-edge enterprise and mobility solutions.",
+      "skills": [
+        "JavaScript",
+        "Python",
+        "Data Structures",
+        "OOP",
+        "Git"
+      ],
+      "source": "VentureDive Careers",
+      "apply_url": "https://www.venturedive.com/careers/",
+      "posted_date": "15 Nov 2026"
+    },
+    {
+      "id": "job-110",
+      "title": "Supply Chain & Operations Executive",
+      "company": "Engro Corporation",
+      "location": "Karachi / Port Qasim",
+      "city": "Karachi",
+      "category": "Engineering & Ops",
+      "type": "Full-Time",
+      "experience": "2-4 Years",
+      "salary": "PKR 170,000 - 250,000 / month",
+      "description": "Optimizing procurement logistics, inventory forecasting, vendor management, and production scheduling.",
+      "skills": [
+        "Supply Chain",
+        "SAP ERP",
+        "Logistics",
+        "Negotiation"
+      ],
+      "source": "Engro Careers",
+      "apply_url": "https://www.engro.com/careers/",
+      "posted_date": "15 Nov 2026"
+    }
+  ]
+}

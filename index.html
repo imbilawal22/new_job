@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily AI News | The Minimalist AI Briefing</title>
-  <meta name="description" content="Minimalist, real-time daily artificial intelligence news, updates, and research breakthroughs.">
+  <title>PakJobs Daily | Latest Jobs in Pakistan</title>
+  <meta name="description" content="Discover verified daily job openings in Pakistan across Tech, AI, Banking, Engineering, Govt, and Remote roles.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,21 +16,29 @@
     <div class="container header-inner">
       <a href="#" class="brand">
         <span class="brand-logo">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
           </svg>
         </span>
-        <span class="brand-name">AI<span class="accent-text">Daily</span></span>
+        <span class="brand-name">PakJobs<span class="accent-text">.pk</span></span>
       </a>
 
       <div class="header-center">
         <span class="live-indicator">
           <span class="pulse-dot"></span>
-          <span id="currentDate">Daily Edition</span>
+          <span id="currentDate">Live Updates</span>
         </span>
       </div>
 
       <nav class="nav-actions">
+        <a href="#alertsSection" class="nav-alert-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/>
+            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>
+          </svg>
+          <span>Job Alerts</span>
+        </a>
         <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
           <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="4"/>
@@ -44,95 +52,129 @@
     </div>
   </header>
 
-  <!-- Hero / Introduction -->
+  <!-- Hero Section -->
   <section class="hero-section">
     <div class="container hero-content">
-      <div class="badge">Artificial Intelligence Digest</div>
-      <h1 class="hero-title">Stay Ahead in the Era of AI</h1>
+      <div class="badge">🇵🇰 Daily Pakistan Career Dispatch</div>
+      <h1 class="hero-title">New Jobs in Pakistan</h1>
       <p class="hero-subtitle">
-        Curated breakthroughs, research papers, model releases, and industry updates delivered every single day without the noise.
+        Direct openings from top companies across Karachi, Lahore, Islamabad, and Remote Pakistan. Verified daily via AI.
       </p>
 
-      <!-- Topic Filters -->
-      <div class="category-bar">
-        <button class="filter-pill active">All Topics</button>
-        <button class="filter-pill">LLMs</button>
-        <button class="filter-pill">Robotics</button>
-        <button class="filter-pill">Computer Vision</button>
-        <button class="filter-pill">Ethics & Policy</button>
-        <button class="filter-pill">Research</button>
+      <!-- Instant Search Input -->
+      <div class="search-container">
+        <div class="search-box">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input 
+            type="text" 
+            id="jobSearchInput" 
+            placeholder="Search by job title, company (e.g. Systems, Jazz, HBL), or skill..."
+            aria-label="Search jobs"
+          >
+          <button id="clearSearch" class="clear-btn" style="display: none;" title="Clear search">&times;</button>
+        </div>
+      </div>
+
+      <!-- City Filters -->
+      <div class="city-bar" id="cityFilters">
+        <span class="filter-label">City:</span>
+        <button class="city-pill active" data-city="All">All Cities</button>
+        <button class="city-pill" data-city="Karachi">Karachi</button>
+        <button class="city-pill" data-city="Lahore">Lahore</button>
+        <button class="city-pill" data-city="Islamabad">Islamabad</button>
+        <button class="city-pill" data-city="Remote">Remote</button>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="category-bar" id="categoryFilters">
+        <button class="filter-pill active" data-category="All">All Categories</button>
+        <button class="filter-pill" data-category="Tech & AI">Tech & AI</button>
+        <button class="filter-pill" data-category="Banking & Finance">Banking & Finance</button>
+        <button class="filter-pill" data-category="Govt & Public Sector">Govt & Public Sector</button>
+        <button class="filter-pill" data-category="Marketing & Sales">Marketing & Sales</button>
+        <button class="filter-pill" data-category="Engineering & Ops">Engineering & Ops</button>
       </div>
     </div>
   </section>
 
-  <!-- Main Feed Area (Currently Empty State) -->
-  <main class="container news-container">
-    <section class="empty-state-card" id="emptyState">
-      <div class="empty-icon-wrapper">
-        <svg class="empty-illustration" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect width="18" height="18" x="3" y="3" rx="2"/>
-          <path d="M9 9h6M9 13h6M9 17h3"/>
-          <circle cx="17.5" cy="17.5" r="2.5" class="ai-spark-dot"/>
+  <!-- Job Feed & Meta Bar -->
+  <main class="container main-feed">
+    <div class="meta-status-bar">
+      <div class="meta-count">
+        Showing <span id="jobsCount" class="highlight-count">10</span> open positions
+      </div>
+      <div class="meta-updated">
+        <span class="status-indicator-dot"></span>
+        <span>Last Synced: <strong id="lastUpdatedTime">Today</strong></span>
+      </div>
+    </div>
+
+    <!-- Job Cards Grid -->
+    <div class="jobs-grid" id="jobsGrid">
+      <!-- Injected dynamically via script.js -->
+    </div>
+
+    <!-- Empty Filter Result State (hidden by default) -->
+    <div class="no-results-card" id="noResults" style="display: none;">
+      <div class="no-results-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.3-4.3M8 11h6"/>
         </svg>
       </div>
-
-      <div class="empty-status-tag">Status: Fresh Edition In Progress</div>
-      
-      <h2 class="empty-title">Koi News Abhi Publish Nahi Hui Hai</h2>
-      <p class="empty-desc">
-        We haven't published today's stories yet. Our systems and editors are tracking the latest model drops, benchmarks, and breakthroughs. Check back shortly for today's briefing!
-      </p>
-
-      <!-- Email Notification Subscription -->
-      <div class="subscribe-box">
-        <p class="subscribe-label">Pehle update pane ke liye notify karein:</p>
-        <form class="subscribe-form" id="notifyForm">
-          <input 
-            type="email" 
-            id="emailInput" 
-            placeholder="Apna email address daalein..." 
-            required
-            aria-label="Email address"
-          >
-          <button type="submit" class="submit-btn">
-            <span>Notify Me</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </button>
-        </form>
-        <p class="form-feedback" id="formFeedback"></p>
-      </div>
-
-      <!-- Quick stats / placeholder preview tags -->
-      <div class="status-grid">
-        <div class="status-item">
-          <span class="status-number">50+</span>
-          <span class="status-text">Sources Monitored</span>
-        </div>
-        <div class="status-item">
-          <span class="status-number">0</span>
-          <span class="status-text">Published Today</span>
-        </div>
-        <div class="status-item">
-          <span class="status-number">Daily</span>
-          <span class="status-text">Frequency</span>
-        </div>
-      </div>
-    </section>
+      <h3>Koi Job Match Nahi Hui</h3>
+      <p>Aapke search ya filter criteria ke mutabiq filhal koi job dastiyab nahi hai. Search clear karein ya dosri category select karein.</p>
+      <button class="reset-filter-btn" id="resetFiltersBtn">Reset Filters</button>
+    </div>
   </main>
+
+  <!-- Job Alert / Newsletter Section -->
+  <section class="alert-section" id="alertsSection">
+    <div class="container">
+      <div class="alert-card">
+        <div class="alert-content">
+          <span class="alert-tag">Never Miss An Opportunity</span>
+          <h2>Pakistan ki Nayi Jobs Ka Alert Payein</h2>
+          <p>Rozana ki nayi AI, Tech aur Banking jobs apne email inbox mein hasil karein. Bilkul muft!</p>
+          <form class="alert-form" id="jobAlertForm">
+            <input 
+              type="email" 
+              id="alertEmail" 
+              placeholder="Apna email address darj karein..." 
+              required
+            >
+            <button type="submit" class="submit-btn">
+              <span>Subscribe Free</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+          <p class="form-feedback" id="alertFeedback"></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Minimalist Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
-        <span class="footer-brand">AI<span class="accent-text">Daily</span></span>
-        <p class="footer-copy">© <span id="currentYear"></span> Daily AI News. Minimalist, uncluttered intelligence.</p>
+        <span class="footer-brand">PakJobs<span class="accent-text">.pk</span></span>
+        <p class="footer-copy">© <span id="currentYear"></span> Pakistan Daily Jobs. Verified daily via Gemini AI & Automated GitHub Actions.</p>
       </div>
       <div class="footer-links">
-        <a href="#about" class="footer-link" id="aboutTrigger">About</a>
-        <a href="#privacy" class="footer-link" id="privacyTrigger">Privacy</a>
-        <a href="#rss" class="footer-link">RSS Feed</a>
+        <a href="https://github.com/imbilawal22/new_job/actions" target="_blank" rel="noopener" class="footer-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          </svg>
+          GitHub Actions
+        </a>
+        <a href="https://github.com/imbilawal22/new_job" target="_blank" rel="noopener" class="footer-link">GitHub Repo</a>
+        <a href="#about" class="footer-link" id="aboutModalLink">About</a>
       </div>
     </div>
   </footer>
